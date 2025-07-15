@@ -3,118 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Interactiva Tecnología Médica</title>
+  <title>Malla Curricular Interactiva</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Malla Interactiva - Tecnología Médica Oftalmología</h1>
+  <h1>Malla Curricular Tecnología Médica - Oftalmología</h1>
   <div class="malla">
     
-    <!-- 1er Semestre -->
-    <div class="semestre">
-      <h2>1° Semestre</h2>
-      <div class="ramo" data-id="matematicas">Matemáticas (5 créditos)</div>
-      <div class="ramo" data-id="quimica">Química general y orgánica (7 créditos)</div>
-      <div class="ramo" data-id="biologia">Biología celular (6 créditos)</div>
-      <div class="ramo" data-id="intro-tecnologia">Introducción a la Tecnología Médica (4 créditos)</div>
-      <div class="ramo" data-id="ingles1">Comunicación en Inglés (4 créditos)</div>
-      <div class="ramo" data-id="filosofia">Fundamentos Filosóficos (4 créditos)</div>
-    </div>
+    <!-- SEMESTRES GENERADOS -->
 
-    <!-- 2do Semestre -->
-    <div class="semestre">
-      <h2>2° Semestre</h2>
-      <div class="ramo" data-id="bioestadistica" data-prerreq='["matematicas"]'>Bioestadística (4 créditos)</div>
-      <div class="ramo" data-id="bioquimica" data-prerreq='["quimica","biologia"]'>Bioquímica general (6 créditos)</div>
-      <div class="ramo" data-id="ingles2" data-prerreq='["ingles1"]'>Comunicación en Inglés II (4 créditos)</div>
-      <div class="ramo" data-id="anatomia">Anatomía Humana (6 créditos)</div>
-      <div class="ramo" data-id="administracion">Introducción a la administración (4 créditos)</div>
-      <div class="ramo" data-id="biofisica">Biofísica</div>
-    </div>
-
-    <!-- 3er Semestre -->
-    <div class="semestre">
-      <h2>3° Semestre</h2>
-      <div class="ramo" data-id="epidemiologia" data-prerreq='["bioestadistica"]'>Epidemiología y Salud Pública (6 créditos)</div>
-      <div class="ramo" data-id="histologia" data-prerreq='["anatomia"]'>Histología Humana (6 créditos)</div>
-      <div class="ramo" data-id="fisiologia" data-prerreq='["bioquimica"]'>Fisiología Humana (6 créditos)</div>
-      <div class="ramo" data-id="inmunologia">Introducción a la Inmunología (4 créditos)</div>
-      <div class="ramo" data-id="psicologia">Psicología Aplicada (4 créditos)</div>
-      <div class="ramo" data-id="teologia" data-prerreq='["filosofia"]'>Fundamentos Teológicos (4 créditos)</div>
-    </div>
-
-    <!-- 4to Semestre -->
-    <div class="semestre">
-      <h2>4° Semestre</h2>
-      <div class="ramo" data-id="enfermeria">Fundamentos de la Enfermería (4 créditos)</div>
-      <div class="ramo" data-id="farmacologia">Farmacología General (4 créditos)</div>
-      <div class="ramo" data-id="fisiopato" data-prerreq='["fisiologia"]'>Fisiopatología Humana (5 créditos)</div>
-      <div class="ramo" data-id="infectologia" data-prerreq='["inmunologia"]'>Infectología General (5 créditos)</div>
-      <div class="ramo" data-id="integracion1">Integración (4 créditos)</div>
-      <div class="ramo" data-id="bioetica">Bioética (4 créditos)</div>
-      <div class="ramo" data-id="ins1">INS (4 créditos)</div>
-    </div>
-
-    <!-- 5to Semestre -->
-    <div class="semestre">
-      <h2>5° Semestre</h2>
-      <div class="ramo" data-id="globo">Anatomía y Morfofisiología del globo ocular (4 créditos)</div>
-      <div class="ramo" data-id="optica">Óptica Oftalmológica (4 créditos)</div>
-      <div class="ramo" data-id="estrabismo1">Estrabismo I (8 créditos)</div>
-      <div class="ramo" data-id="glaucoma1">Fisiología y estudio del Glaucoma I (8 créditos)</div>
-      <div class="ramo" data-id="calidad">Gestión de calidad en oftalmología (4 créditos)</div>
-      <div class="ramo" data-id="ins2">INS (4 créditos)</div>
-    </div>
-
-    <!-- 6to Semestre -->
-    <div class="semestre">
-      <h2>6° Semestre</h2>
-      <div class="ramo" data-id="polo" data-prerreq='["globo"]'>Fisiopatología del Polo Anterior (5 créditos)</div>
-      <div class="ramo" data-id="optometrica1" data-prerreq='["estrabismo1","glaucoma1"]'>Aplicaciones Clínicas Optométricas I (7 créditos)</div>
-      <div class="ramo" data-id="estrabismo2" data-prerreq='["estrabismo1"]'>Estrabismo II (8 créditos)</div>
-      <div class="ramo" data-id="glaucoma2" data-prerreq='["glaucoma1"]'>Estudio del Glaucoma II (8 créditos)</div>
-    </div>
-
-    <!-- 7mo Semestre -->
-    <div class="semestre">
-      <h2>7° Semestre</h2>
-      <div class="ramo" data-id="retina">Retina e Imagenología Ocular (7 créditos)</div>
-      <div class="ramo" data-id="optometrica2" data-prerreq='["optometrica1"]'>Aplicaciones Clínicas Optométricas II (8 créditos)</div>
-      <div class="ramo" data-id="orto" data-prerreq='["estrabismo2"]'>Estudio y tratamiento Ortóptico y pleóptico (7 créditos)</div>
-      <div class="ramo" data-id="gestion">Gestión estratégica en salud (4 créditos)</div>
-      <div class="ramo" data-id="investigacion1">Introducción a la investigación (4 créditos)</div>
-    </div>
-
-    <!-- 8vo Semestre -->
-    <div class="semestre">
-      <h2>8° Semestre</h2>
-      <div class="ramo" data-id="cirugia">Técnicas de apoyo en cirugía refractiva (6 créditos)</div>
-      <div class="ramo" data-id="primaria" data-prerreq='["retina","optometrica2"]'>Atención primaria en Oftalmología (7 créditos)</div>
-      <div class="ramo" data-id="neuro" data-prerreq='["glaucoma2"]'>Neuroftalmología (5 créditos)</div>
-      <div class="ramo" data-id="preinternado">Integración pre internado para oftalmología (4 créditos)</div>
-      <div class="ramo" data-id="metodo" data-prerreq='["investigacion1"]'>Metodología de la investigación (4 créditos)</div>
-      <div class="ramo" data-id="optativo1">Optativo de profundización (4 créditos)</div>
-    </div>
-
-    <!-- 9no Semestre -->
-    <div class="semestre">
-      <h2>9° Semestre</h2>
-      <div class="ramo" data-id="ias" data-prerreq='["cirugia","primaria","neuro","preinternado"]'>Infección asociada a atención en salud (7 créditos)</div>
-      <div class="ramo" data-id="gestion2" data-prerreq='["cirugia","primaria","neuro","preinternado"]'>Gestión y Administración en salud (7 créditos)</div>
-      <div class="ramo" data-id="optativo2">Optativo de profundización (4 créditos)</div>
-      <div class="ramo" data-id="ins3">INS (4 créditos)</div>
-      <div class="ramo" data-id="proyecto" data-prerreq='["metodo"]'>Proyecto de investigación aplicada (4 créditos)</div>
-      <div class="ramo" data-id="optativo3">Optativo de profundización (4 créditos)</div>
-    </div>
-
-    <!-- 10° Semestre -->
-    <div class="semestre">
-      <h2>10° Semestre</h2>
-      <div class="ramo" data-id="internado">Internado mención Oftalmología y Optometría (240 SCT aprobados)</div>
-    </div>
+    <!-- Cada semestre está generado por el script.js automáticamente -->
 
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
