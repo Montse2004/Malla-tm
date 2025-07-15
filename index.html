@@ -2,36 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Tecnología Médica - Oftalmología y Optometría UCSC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Interactiva Tecnología Médica</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Malla Curricular</h1>
-    <h2>Tecnología Médica - Mención Oftalmología y Optometría UCSC</h2>
-  </header>
+  <h1>Malla Interactiva Tecnología Médica</h1>
 
-  <main>
-    <!-- Aquí estarán los semestres cargados dinámicamente -->
-    <section class="semestre" onclick="toggle('s1')">
-      <h3>Ejemplo Semestre</h3>
-      <ul id="s1" class="contenido">
-        <li class="asignatura basico" onclick="togglePrereq(event)">
-          Biología Celular (6 créditos)
-          <div class="prereq">Sin prerrequisitos</div>
-        </li>
-        <li class="asignatura clinico" onclick="togglePrereq(event)">
-          Estrabismo I (8 créditos)
-          <div class="prereq">Sin prerrequisitos</div>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <div class="malla">
+    <div class="cell" data-info="Información semestre 1">Semestre 1</div>
+    <div class="cell" data-info="Información semestre 2">Semestre 2</div>
+    <div class="cell" data-info="Información semestre 3">Semestre 3</div>
+    <div class="cell" data-info="Información semestre 4">Semestre 4</div>
+    <div class="cell" data-info="Información semestre 5">Semestre 5</div>
+    <div class="cell" data-info="Información semestre 6">Semestre 6</div>
+    <div class="cell" data-info="Información semestre 7">Semestre 7</div>
+    <div class="cell" data-info="Información semestre 8">Semestre 8</div>
+  </div>
 
-  <footer>
-    <p>Universidad Católica de la Santísima Concepción - Tecnología Médica</p>
-  </footer>
+  <div id="info-box" style="display:none;">
+    <button id="close-info">Cerrar</button>
+    <div id="info-content"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
