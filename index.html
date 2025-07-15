@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Tecnología Médica - Oftalmología y Optometría UCSC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular</h1>
+    <h2>Tecnología Médica - Mención Oftalmología y Optometría UCSC</h2>
+  </header>
+
+  <main>
+    <!-- Aquí estarán los semestres cargados dinámicamente -->
+    <section class="semestre" onclick="toggle('s1')">
+      <h3>Ejemplo Semestre</h3>
+      <ul id="s1" class="contenido">
+        <li class="asignatura basico" onclick="togglePrereq(event)">
+          Biología Celular (6 créditos)
+          <div class="prereq">Sin prerrequisitos</div>
+        </li>
+        <li class="asignatura clinico" onclick="togglePrereq(event)">
+          Estrabismo I (8 créditos)
+          <div class="prereq">Sin prerrequisitos</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Universidad Católica de la Santísima Concepción - Tecnología Médica</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
