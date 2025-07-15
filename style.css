@@ -52,7 +52,7 @@ h1 {
 }
 
 .ramo.bloqueado {
-  background-color: #ccc; /* gris bloqueado */
+  background-color: #ccc;
   color: #666;
   cursor: not-allowed;
 }
