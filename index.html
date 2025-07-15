@@ -3,23 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Malla Interactiva</title>
+  <title>Malla Interactiva 10 Semestres</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Malla Interactiva</h1>
+  <h1>Malla Interactiva 10 Semestres</h1>
   <div class="semestres">
+
+    <!-- 1er Semestre -->
     <div class="semestre">
       <h2>1° Semestre</h2>
-      <div class="ramo" data-id="ramo1">Ramo 1</div>
-      <div class="ramo" data-id="ramo2">Ramo 2</div>
+      <div class="ramo" data-id="matematicas">Matemáticas (5 créditos)</div>
+      <div class="ramo" data-id="quimica">Química general y orgánica (7 créditos)</div>
+      <div class="ramo" data-id="biologia">Biología celular (6 créditos)</div>
+      <div class="ramo" data-id="introTecnologia">Introducción a la Tecnología Médica (4 créditos)</div>
+      <div class="ramo" data-id="ingles1">Comunicación en Inglés (4 créditos)</div>
+      <div class="ramo" data-id="fundamentosFilosoficos">Fundamentos Filosóficos (4 créditos)</div>
     </div>
+
+    <!-- 2do Semestre -->
     <div class="semestre">
       <h2>2° Semestre</h2>
-      <div class="ramo" data-id="ramo3" data-prerreq='["ramo1"]'>Ramo 3</div>
-      <div class="ramo" data-id="ramo4" data-prerreq='["ramo2"]'>Ramo 4</div>
+      <div class="ramo" data-id="bioestadistica" data-prerreq='["matematicas"]'>Bioestadística (4 créditos)</div>
+      <div class="ramo" data-id="bioquimica" data-prerreq='["quimica","biologia"]'>Bioquímica general (6 créditos)</div>
+      <div class="ramo" data-id="ingles2" data-prerreq='["ingles1"]'>Comunicación en Inglés II (4 créditos)</div>
+      <div class="ramo" data-id="anatomiaHumana">Anatomía Humana (6 créditos)</div>
+      <div class="ramo" data-id="introAdmin">Introducción a la administración (4 créditos)</div>
+      <div class="ramo" data-id="biofisica">Biofísica</div>
     </div>
+
+    <!-- 3er Semestre -->
+    <div class="semestre">
+      <h2>3° Semestre</h2>
+      <div class="ramo" data-id="epidemiologia" data-prerreq='["bioestadistica"]'>Epidemiología y Salud Pública (6 créditos)</div>
+      <div class="ramo" data-id="histologia" data-prerreq='["anatomiaHumana"]'>Histología Humana (6 créditos)</div>
+      <div class="ramo" data-id="fisiologiaHumana" data-prerreq='["bioquimica"]'>Fisiología Humana (6 créditos)</div>
+      <div class="ramo" data-id="introInmunologia">Introducción a la Inmunología (4 créditos)</div>
+      <div class="ramo" data-id="psicologiaAplicada">Psicología Aplicada (4 créditos)</div>
+      <div class="ramo" data-id="fundamentosTeologicos" data-prerreq='["fundamentosFilosoficos"]'>Fundamentos Teológicos (4 créditos)</div>
+    </div>
+
+    <!-- 4to Semestre -->
+    <div class="semestre">
+      <h2>4° Semestre</h2>
+      <div class="ramo" data-id="fundamentosEnfermeria">Fundamentos de la Enfermería (4 créditos)</div>
+      <div class="ramo" data-id="farmacologiaGeneral">Farmacología General (4 créditos)</div>
+      <div class="ramo" data-id="fisiopatologiaHumana" data-prerreq='["fisiologiaHumana"]'>Fisiopatología Humana (5 créditos)</div>
+      <div class="ramo" data-id="infectologiaGeneral" data-prerreq='["introInmunologia"]'>Infectología General (5 créditos)</div>
+      <div class="ramo" data-id="integracion">Integración (4 créditos)</div>
+      <div class="ramo" data-id="bioetica">Bioética (4 créditos)</div>
+      <div class="ramo" data-id="ins4">INS (4 créditos)</div>
+    </div>
+
+    <!-- 5to Semestre -->
+    <div class="semestre">
+      <h2>5° Semestre</h2>
+      <div class="ramo" data-id="anatomiaGloboOcular">Anatomía y Morfofisiología del globo ocular (4 créditos)</div>
+      <div class="ramo" data-id="opticaOftalmologica">Óptica Oftalmológica (4 créditos)</div>
+      <div class="ramo" data-id="estrabismo1">Estrabismo I (8 créditos)</div>
+      <div class="ramo" data-id="glaucoma1">Fisiología y estudio del Glaucoma I (8 créditos)</div>
+      <div class="ramo" data-id="gestionCalidad">Gestión de calidad en oftalmología (4 créditos)</div>
+      <div class="ramo" data-id="ins5">INS (4 créditos)</div>
+    </div>
+
+    <!-- 6to Semestre -->
+    <div class="semestre">
+      <h2>6° Semestre</h2>
+      <div class="ramo" data-id="fisiopatologiaPoloAnterior" data-prerreq='["anatomiaGloboOcular"]'>Fisiopatología del Polo Anterior (5 créditos)</div>
+      <div class="ramo" data-id="aplicacionesClinicas1" data-prerreq='["estrabismo1","glaucoma1"]'>Aplicaciones Clínicas Optométricas I (7 créditos)</div>
+      <div class="ramo" data-id="estrabismo2" data-prerreq='["estrabismo1"]'>Estrabismo II (8 créditos)</div>
+      <div class="ramo" data-id="estudioGlaucoma2" data-prerreq='["glaucoma1"]'>Estudio del Glaucoma II (8 créditos)</div>
+    </div>
+
+    <!-- 7mo Semestre -->
+    <div class="semestre">
+      <h2>7° Semestre</h2>
+      <div class="ramo" data-id="retinaImagenologia">Retina e Imagenología Ocular (7 créditos)</div>
+      <div class="ramo" data-id="aplicacionesClinicas2" data-prerreq='["aplicacionesClinicas1"]'>Aplicaciones Clínicas Optométricas II (8 créditos)</div>
+      <div class="ramo" data-id="estudioTratamientoOrtoptico" data-prerreq='["estrabismo2"]'>Estudio y tratamiento Ortóptico y pleóptico (7 créditos)</div>
+      <div class="ramo" data-id="gestionEstrategicaSalud">Gestión estratégica en salud (4 créditos)</div>
+      <div class="ramo" data-id="introduccionInvestigacion">Introducción a la investigación (4 créditos)</div>
+    </div>
+
+    <!-- 8vo Semestre -->
+    <div class="semestre">
+      <h2>8° Semestre</h2>
+      <div class="ramo" data-id="tecnicasCirugiaRefractiva">Técnicas de apoyo en cirugía refractiva (6 créditos)</div>
+      <div class="ramo" data-id="atencionPrimariaOftalmologia" data-prerreq='["retinaImagenologia","aplicacionesClinicas2"]'>Atención primaria en Oftalmología (7 créditos)</div>
+      <div class="ramo" data-id="neuroftalmologia" data-prerreq='["estudioGlaucoma2"]'>Neuroftalmología (5 créditos)</div>
+      <div class="ramo" data-id="integracionPreInternado">Integración pre internado para oftalmología (4 créditos)</div>
+      <div class="ramo" data-id="metodologiaInvestigacion" data-prerreq='["introduccionInvestigacion"]'>Metodología de la investigación (4 créditos)</div>
+      <div class="ramo" data-id="optativoProfundizacion8">Optativo de profundización (4 créditos)</div>
+    </div>
+
+    <!-- 9no Semestre -->
+    <div class="semestre">
+      <h2>9° Semestre</h2>
+      <div class="ramo" data-id="infeccionAsociada" data-prerreq='["tecnicasCirugiaRefractiva","atencionPrimariaOftalmologia","neuroftalmologia","integracionPreInternado"]'>Infección asociada a atención en salud (7 créditos)</div>
+      <div class="ramo" data-id="gestionAdministracionSalud" data-prerreq='["tecnicasCirugiaRefractiva","atencionPrimariaOftalmologia","neuroftalmologia","integracionPreInternado"]'>Gestión y Administración en salud (7 créditos)</div>
+      <div class="ramo" data-id="optativoProfundizacion9">Optativo de profundización (4 créditos)</div>
+      <div class="ramo" data-id="ins9">INS (4 créditos)</div>
+      <div class="ramo" data-id="proyectoInvestigacion" data-prerreq='["metodologiaInvestigacion"]'>Proyecto de investigación aplicada (4 créditos)</div>
+      <div class="ramo" data-id="optativoProfundizacion9b">Optativo de profundización (4 créditos)</div>
+    </div>
+
+    <!-- 10mo Semestre -->
+    <div class="semestre">
+      <h2>10° Semestre</h2>
+      <div class="ramo" data-id="internado" data-prerreq='["infeccionAsociada","gestionAdministracionSalud","proyectoInvestigacion"]'>Internado mención Oftalmología y Optometría (240 SCT aprobados)</div>
+    </div>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
