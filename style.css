@@ -20,23 +20,30 @@ h1 {
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 15px;
-  width: 200px;
+  width: 250px;
   background-color: #fff;
 }
 
+.semestre h2 {
+  text-align: center;
+  color: #800020;
+  margin-bottom: 15px;
+}
+
 .ramo {
-  background-color: #800020; /* burdeo para ramos NO aprobados */
-  margin: 5px 0;
+  background-color: #800020; /* burdeo para no aprobados */
+  margin: 6px 0;
   padding: 10px;
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
   color: white;
   transition: background 0.3s, color 0.3s;
+  user-select: none;
 }
 
 .ramo.aprobado {
-  background-color: pink; /* rosado para ramos aprobados */
+  background-color: pink; /* rosado para aprobados */
   color: #800020;
   text-decoration: line-through;
 }
@@ -47,5 +54,3 @@ h1 {
   pointer-events: none;
   color: #666;
 }
-
-
