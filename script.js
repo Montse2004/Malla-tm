@@ -1,18 +1,22 @@
-// script.js
-function toggle(id) {
-  const el = document.getElementById(id);
-  if (el.style.display === 'none' || el.style.display === '') {
-    el.style.display = 'block';
-  } else {
-    el.style.display = 'none';
-  }
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const cells = document.querySelectorAll('.cell');
+  const infoBox = document.getElementById('info-box');
+  const closeBtn = document.getElementById('close-info');
 
-function togglePrereq(event) {
-  const p = event.target.querySelector('.prereq');
-  if (p) {
-    p.style.display = p.style.display === 'block' ? 'none' : 'block';
-    event.stopPropagation();
-  }
-}
+  cells.forEach(cell => {
+    cell.addEventListener('click', () => {
+      const info = cell.getAttribute('data-info');
+      infoBox.innerHTML = `
+        <h3>${cell.textContent}</h3>
+        <p>${info}</p>
+      `;
+      infoBox.style.display = 'block';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    infoBox.style.display = 'none';
+  });
+});
+
 
