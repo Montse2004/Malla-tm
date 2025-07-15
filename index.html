@@ -2,29 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Malla Interactiva Tecnología Médica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Malla Interactiva Tecnología Médica</h1>
-
-  <div class="malla">
-    <div class="cell" data-info="Información semestre 1">Semestre 1</div>
-    <div class="cell" data-info="Información semestre 2">Semestre 2</div>
-    <div class="cell" data-info="Información semestre 3">Semestre 3</div>
-    <div class="cell" data-info="Información semestre 4">Semestre 4</div>
-    <div class="cell" data-info="Información semestre 5">Semestre 5</div>
-    <div class="cell" data-info="Información semestre 6">Semestre 6</div>
-    <div class="cell" data-info="Información semestre 7">Semestre 7</div>
-    <div class="cell" data-info="Información semestre 8">Semestre 8</div>
+  <h1>Malla Interactiva</h1>
+  <div class="semestres">
+    <div class="semestre">
+      <h2>1° Semestre</h2>
+      <div class="ramo" data-id="ramo1">Ramo 1</div>
+      <div class="ramo" data-id="ramo2">Ramo 2</div>
+    </div>
+    <div class="semestre">
+      <h2>2° Semestre</h2>
+      <div class="ramo" data-id="ramo3" data-prerreq='["ramo1"]'>Ramo 3</div>
+      <div class="ramo" data-id="ramo4" data-prerreq='["ramo2"]'>Ramo 4</div>
+    </div>
+    <!-- Sigue agregando más semestres aquí -->
   </div>
-
-  <div id="info-box" style="display:none;">
-    <button id="close-info">Cerrar</button>
-    <div id="info-content"></div>
-  </div>
-
   <script src="script.js"></script>
 </body>
 </html>
